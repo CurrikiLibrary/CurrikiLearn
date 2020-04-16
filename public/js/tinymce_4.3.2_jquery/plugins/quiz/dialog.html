@@ -1,0 +1,230 @@
+<!-- Modal -->
+
+<div class="modal fade" id="QuestionModal" tabindex="-1" role="dialog" aria-labelledby="QuestionModalLabel"  data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Insert Question</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div id="tabs" class="questions-tabs">
+                        <ul>
+                            <li><a href="#mcqs">MCQs</a></li>
+                            <li><a href="#true-false">True / False</a></li>
+                        </ul>
+                        <div id="mcqs">
+                            <form  id="mcq_question_form" class="mcq_question_form">
+                                <div class="mcqs_wrapper">
+                                    <div class="row" id="question_statement_wrapper">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="question_statement">Question:</label>
+                                                <textarea id = "question_statement" class="question_model" name = "question_statement" ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5" id="answer_1_wrapper">
+                                            <div class="form-group">
+                                                <label for="answer_1">Answer 1:</label>
+                                                <textarea id = "answer_1" class="question_model" name = "answer_1" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5" id="answer_selection_1_wrapper">
+                                            <div class="form-group">
+                                                <label for="answer_selection_1">Response 1:</label>
+                                                <textarea id = "answer_selection_1" class="question_model" name = "answer_selection_1" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" id="correct_answer_wrapper">
+                                            <div class="form-group">
+                                                <input type="radio" name="correct_answer" id="answer_model_correct_answer_1" value="1">
+                                                <label for="answer_model_correct_answer_1">Correct</label>
+                                                <span class="question-tooltip tooltip fa fa-question-circle" data-hasqtip="9">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5" id="answer_2_wrapper">
+                                            <div class="form-group">
+                                                <label for="answer_2">Answer 2:</label>
+                                                <textarea id = "answer_2" class="question_model" name = "answer_2" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5" id="answer_selection_2_wrapper">
+                                            <div class="form-group">
+                                                <label for="answer_selection_2">Response 2:</label>
+                                                <textarea id = "answer_selection_2" class="question_model" name = "answer_selection_2" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <input type="radio" name="correct_answer" id="answer_model_correct_answer_2" value="2">
+                                                <label for="answer_model_correct_answer_2">Correct</label>
+                                                <span class="question-tooltip tooltip fa fa-question-circle" data-hasqtip="9">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="answer_3">Answer 3:</label>
+                                                <textarea id = "answer_3" class="question_model" name = "answer_3" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="answer_selection_3">Response 3:</label>
+                                                <textarea id = "answer_selection_3" class="question_model" name = "answer_selection_3" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <input type="radio" name="correct_answer" id="answer_model_correct_answer_3" value="3">
+                                                <label for="answer_model_correct_answer_3">Correct</label>
+                                                <span class="question-tooltip tooltip fa fa-question-circle" data-hasqtip="9">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="answer_4">Answer 4:</label>
+                                                <textarea id = "answer_4" class="question_model" name = "answer_4" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="answer_selection_4">Response 4:</label>
+                                                <textarea id = "answer_selection_4" class="question_model" name = "answer_selection_4" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <input type="radio" name="correct_answer" id="answer_model_correct_answer_4" value="4">
+                                                <label for="answer_model_correct_answer_4">Correct</label>
+                                                <span class="question-tooltip tooltip fa fa-question-circle" data-hasqtip="9">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="answer_5">Answer 5:</label>
+                                                <textarea id = "answer_5" class="question_model" name = "answer_5" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="answer_selection_5">Response 5:</label>
+                                                <textarea id = "answer_selection_5" class="question_model" name = "answer_selection_5" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <input type="radio" name="correct_answer" id="answer_model_correct_answer_5" value="5">
+                                                <label for="answer_model_correct_answer_5">Correct</label>
+                                                <span class="question-tooltip tooltip fa fa-question-circle" data-hasqtip="9">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <input type="submit" name="submit" class="btn btn-primary" value="Save changes" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="question_type" value="mcq" />
+                            </form>
+                        </div>
+                        <div id="true-false">
+                            <form  id="truefalse_question_form" class="truefalse_question_form">
+                                <div class="true_false_wrapper">
+                                    <div class="row" id="truefalse_question_statement_wrapper">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="truefalse_question_statement">Question:</label>
+                                                <textarea id = "truefalse_question_statement" class="question_model" name = "truefalse_question_statement" ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="truefalse_answer_selection_1_wrapper">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="truefalse_answer_1">Answer 1:</label>
+                                                <strong>True</strong>
+                                                <input type="hidden" name="truefalse_answer_1" value="True" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="truefalse_answer_selection_1">Response 1:</label>
+                                                <textarea id = "truefalse_answer_selection_1" class="question_model" name = "truefalse_answer_selection_1" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" id="truefalse_correct_answer_wrapper">
+                                            <div class="form-group">
+                                                <label>
+                                                <input type="radio" name="truefalse_correct_answer" value="1">
+                                                Correct</label>
+                                                <span class="question-tooltip tooltip fa fa-question-circle" data-hasqtip="9">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="truefalse_answer_selection_2_wrapper">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="answer_2">Answer 2:</label>
+                                                <strong>False</strong>
+                                                <!--<textarea id = "answer_2" class="question_model" name = "answer_2" ></textarea>-->
+                                                <input type="hidden" name="truefalse_answer_2" value="False" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="truefalse_answer_selection_2">Response 2:</label>
+                                                <textarea id = "truefalse_answer_selection_2" class="question_model" name = "truefalse_answer_selection_2" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label>
+                                                <input type="radio" name="truefalse_correct_answer" value="2">
+                                                Correct</label>
+                                                <span class="question-tooltip tooltip fa fa-question-circle" data-hasqtip="9">&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <input type="submit" name="submit" class="btn btn-primary" value="Save changes" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="question_type" value="true_false" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery(function () {
+            jQuery("#tabs").tabs();
+        });
+        jQuery('.question-tooltip').qtip({
+            content: {
+                text: "If an incorrect answer is selected the text you enter as 'Response to selecting this answer.' will display followed by 'Your answer was incorrect. Please try again.\n<br /><br />\
+    If a correct answer is selected the text you enter as 'Response to selecting this answer.' will display followed by 'Congratulations. You selected the correct answer.'"
+            },
+            style: {classes: 'qtipCustomClass forceZIndexQtip'}
+        });
+    });
+</script>
