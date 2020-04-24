@@ -1,4 +1,4 @@
-Enterprise-Level Collaboration System for Managing Curricula
+Enterprise-Level Collaboration System for Managing Curricula.
 
 This project implements a custom interface of the Curriki library.
 
@@ -8,32 +8,79 @@ Key features:
 - Group management that allows administration at the regional, district and school levels.
 - Resource filtering based on an individual's group membership.
 
-Deployment:
+**Deployment:**
 
-- Clone repository
+  
 
-- Install composer dependencies
-	composer install
+- **Clone repository**
 
-- Set directory permissions
-	// set ./storage and  ./bootstrap/cache directories to be writable by your webserver of choice.
-	// But if you're lazy (don't do in production):
-	sudo chmod -R 777 storage
-	sudo chmod -R 777 bootstrap/cache
+clone using below command
 
-- If you're setting up a local version of the site, make sure to get a copy of the storage folder and
-	extract it to storage/app
+git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
 
-- Link storage
+  
+
+- **Database** **Configuration**
+
+- Import the .sql file provided in data folder
+
+- Update the definer of all triggers with [db_user_name@host](mailto:db_user_name@host) //root@localhost
+
+- **Configuration Settings**
+
+  
+
+- Configure environment variable using below commands
+
+- cd project-directory
+
+- cp .env.example .env
+
+- Update database credentails in .env file
+
+  
+
+DB_DATABASE=homestead
+
+DB_USERNAME=homestead
+
+DB_PASSWORD=secret
+
+  
+
+  
+
+  
+
+- Run below commands
+
+composer install
+
+- Change Permissions
+
+chmod -R 777 bootstrap/cache storage/
+
+  
+
+- Generate laravel key using below command
+
+		php artisan key:generate
+
+  - Link storage
 	php artisan storage:link
 	// If this gives you a symlink error, delete public/storage and then try again
 
-- Configure environment variables
-	cp .env.example .env
-	// Open the newly copied .env file in a text editor and fill in the settings (Database credentials and so on)
-
-- Generate laravel application key
-	php artisan key:generate
 
 - Run laravel database migrations or load backup database if you have one
 	php artisan migrate
+**- Vhost Configuration**
+
+  
+- Create and enable vhost.
+
+- Restart the server
+
+- Update the hosts file entry.
+	
+
+
