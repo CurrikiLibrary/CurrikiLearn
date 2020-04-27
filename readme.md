@@ -14,7 +14,7 @@ Key features:
 
 - **Clone repository**
 
-    clone using below command
+    Clone using below command.
 
     git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
 
@@ -64,7 +64,10 @@ Key features:
 
 
 - Run laravel database migrations or load backup database if you have one
-	php artisan migrate
+	
+        php artisan migrate
+
+
 **- Vhost Configuration**
 
   
