@@ -14,17 +14,17 @@ Key features:
 
 - **Clone repository**
 
-clone using below command
+    clone using below command
 
-git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
+    git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
 
   
 
 - **Database** **Configuration**
 
-- Import the .sql file provided in data folder
+    - Import the .sql file provided in data folder
 
-- Update the definer of all triggers with [db_user_name@host](mailto:db_user_name@host) //root@localhost
+    - Update the definer of all triggers with [db_user_name@host](mailto:db_user_name@host) //root@localhost
 
 - **Configuration Settings**
 
@@ -38,27 +38,19 @@ git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](ht
 
 - Update database credentails in .env file
 
-  
+        DB_DATABASE=homestead
 
-DB_DATABASE=homestead
+        DB_USERNAME=homestead
 
-DB_USERNAME=homestead
-
-DB_PASSWORD=secret
-
-  
-
-  
-
-  
+        DB_PASSWORD=secret
 
 - Run below commands
 
-composer install
+        composer install
 
 - Change Permissions
 
-chmod -R 777 bootstrap/cache storage/
+        chmod -R 777 bootstrap/cache storage/
 
   
 
@@ -76,11 +68,11 @@ chmod -R 777 bootstrap/cache storage/
 **- Vhost Configuration**
 
   
-- Create and enable vhost.
+    - Create and enable vhost.
 
-- Restart the server
+    - Restart the server
 
-- Update the hosts file entry.
+    - Update the hosts file entry.
 	
 
 
