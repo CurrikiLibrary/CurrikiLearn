@@ -71,7 +71,7 @@ Key features:
 
 - No need to run laravel migration or seeders, while using the CurrikiOpenLibrary sample DB
 
-**- Serve Through Laravel **
+- **Serve Through Laravel**
         ```
         php artisan serve
         ```
