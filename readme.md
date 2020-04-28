@@ -34,12 +34,25 @@ Key features:
 - cp .env.example .env
 
 - Update database credentails in .env file. Use the same database configured for CurrikiOpenLibrary.
-
+        ```
         DB_DATABASE=homestead
 
         DB_USERNAME=homestead
 
         DB_PASSWORD=secret
+
+        CURRIKI_API_URL=URL TO CurrikiOpenLibrary ROOT
+
+        CURRIKI_AVATARS_BASE_URL=URL TO "avatars" FOLDER on AWS S3
+
+        APP_HUB_ID=ID OF GROUP TYPE "Hub" IN "custom_groups" TABLE, 1 IN SAMPLE DB
+
+        CURRIKI_GROUP_ID=ID OF GROUP IN CURRIKI, 7980 IN SAMPLE DB
+
+        GOOGLE_RECAPTCHA_SITE_KEY
+
+        GOOGLE_RECAPTCHA_SECRET_KEY
+        ```
 
 - Run below commands
 
