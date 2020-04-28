@@ -8,6 +8,9 @@ Key features:
 - Group management that allows administration at the regional, district and school levels.
 - Resource filtering based on an individual's group membership.
 
+**Prerequisite**
+
+    - Must configured and installed CurrikiOpenLibrary as CurrikiOpenCurriculumPortal is using API's from CurrikiOpenLibrary.
 **Deployment:**
 
   
@@ -18,13 +21,7 @@ Key features:
 
     git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
 
-  
 
-- **Database** **Configuration**
-
-    - Import the .sql file provided in data folder
-
-    - Update the definer of all triggers with [db_user_name@host](mailto:db_user_name@host) //root@localhost
 
 - **Configuration Settings**
 
@@ -36,7 +33,7 @@ Key features:
 
 - cp .env.example .env
 
-- Update database credentails in .env file
+- Update database credentails in .env file. Use the same database configured for CurrikiOpenLibrary.
 
         DB_DATABASE=homestead
 
