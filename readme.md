@@ -55,37 +55,24 @@ Key features:
         ```
 
 - Run below commands
-
+        ```
         composer install
+        ```
 
-- Change Permissions
-
-        chmod -R 777 bootstrap/cache storage/
-
-  
+- Change Group
+        ```
+        sudo chgrp -R www-data storage
+        ```
 
 - Generate laravel key using below command
+        ```
+        php artisan key:generate
+        ```
 
-		php artisan key:generate
+- No need to run laravel migration or seeders, while using the CurrikiOpenLibrary sample DB
 
-  - Link storage
-	php artisan storage:link
-	// If this gives you a symlink error, delete public/storage and then try again
-
-
-- Run laravel database migrations or load backup database if you have one
-	
-        php artisan migrate
-
-
-**- Vhost Configuration**
-
-  
-    - Create and enable vhost.
-
-    - Restart the server
-
-    - Update the hosts file entry.
-	
-
-
+**- Serve Through Laravel **
+        ```
+        php artisan serve
+        ```
+        - Default username/password=root/123456
