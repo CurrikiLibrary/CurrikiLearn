@@ -61,7 +61,10 @@ Key features:
 
 - Change Group
         ```
-        sudo chgrp -R www-data storage
+        sudo chown -R $USER:www-data storage
+        sudo chown -R $USER:www-data bootstrap/cache
+        chmod -R 775 storage
+        chmod -R 775 bootstrap/cache
         ```
 
 - Generate laravel key using below command
@@ -71,8 +74,12 @@ Key features:
 
 - No need to run laravel migration or seeders, while using the CurrikiOpenLibrary sample DB
 
-- **Serve Through Laravel**
-        ```
-        php artisan serve
-        ```
-        - Default username/password=root/123456
+- **Vhost Configuration**
+    - Create and enable vhost.
+    - Restart the server
+    - Update the hosts file entry.
+
+
+- **Test Credentials**
+    - user=root
+    - pass=123456
