@@ -20,7 +20,7 @@ Key features:
     Clone using below command.
 
 ```
-git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
+git clone https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git directoryName
 ```
 
 
