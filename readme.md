@@ -19,7 +19,9 @@ Key features:
 
     Clone using below command.
 
-    git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
+        ```
+        git clone [https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git](https://github.com/CurrikiLibrary/CurrikiOpenCurriculumPortal.git) directoryName
+        ```
 
 
 
@@ -29,11 +31,13 @@ Key features:
 
 - Configure environment variable using below commands
 
-- cd project-directory
-
-- cp .env.example .env
+        ```
+        cd project-directory
+        cp .env.example .env
+        ```
 
 - Update database credentails in .env file. Use the same database configured for CurrikiOpenLibrary.
+
         ```
         DB_DATABASE=homestead
 
@@ -55,11 +59,13 @@ Key features:
         ```
 
 - Run below commands
+
         ```
         composer install
         ```
 
 - Change Group
+
         ```
         sudo chown -R $USER:www-data storage
         sudo chown -R $USER:www-data bootstrap/cache
@@ -68,6 +74,7 @@ Key features:
         ```
 
 - Generate laravel key using below command
+
         ```
         php artisan key:generate
         ```
