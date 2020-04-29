@@ -10,7 +10,8 @@ Key features:
 
 **Prerequisite**
 
-    - Must configured and installed CurrikiOpenLibrary as CurrikiOpenCurriculumPortal is using API's from CurrikiOpenLibrary.
+- **Must configured and installed CurrikiOpenLibrary as CurrikiOpenCurriculumPortal is using API's from CurrikiOpenLibrary.**
+
 **Deployment:**
 
   
