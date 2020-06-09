@@ -39,7 +39,8 @@ class UserAdminController extends Controller
         $levels = LevelGrouping::all();
         $subjects = Subject::orderBy('displayname', 'ASC')->pluck('displayname', 'subjectid');
         $roles = UserRole::whereIn('name', ['admin', 'moderator', 'member', 'branch_admin'])->get();
-        $groups = Group::all();
+        $groups = Group::find(env('NASSAU_HUB_ID'))->getAllChildren();
+
         $query = ($request->filled('query')) ? $request->input('query') : '';
 
         $userIds = \DB::table('custom_group_users')->whereIn('group_id', $groups->pluck('id'))->pluck('user_id');

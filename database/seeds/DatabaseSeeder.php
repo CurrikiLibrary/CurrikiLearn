@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
             CustomGroupResourceVisibilityOptionsTableSeeder::class,
             CustomGroupUsersTableSeeder::class,
             CustomGroupUserRolesTableSeeder::class,
+            CustomLevelGroupingsTableSeeder::class,
+            CustomLevelGroupingLevelsTableSeeder::class,
         ]);
     }
 }
