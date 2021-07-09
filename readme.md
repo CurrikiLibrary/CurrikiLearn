@@ -1,5 +1,4 @@
-<img srchttps://currikilearn.org/images/logo2.png="
-https://currikilearn.org/images/logo2.png">
+CurrikiLearn
 
 Enterprise-Level Collaboration System for Managing Curricula.
 
