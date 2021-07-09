@@ -1,3 +1,6 @@
+<img srchttps://currikilearn.org/images/logo2.png="
+https://currikilearn.org/images/logo2.png">
+
 Enterprise-Level Collaboration System for Managing Curricula.
 
 This project implements a custom interface of the Curriki library.
